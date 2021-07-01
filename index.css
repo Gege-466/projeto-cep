@@ -1,20 +1,27 @@
+* {
+    font-family: cursive;
+}
+
 .intro {
     text-align: center;
 }
 .titulo {
-    font-family: cursive;
     text-decoration: underline;
     color: #4775d1;
     text-shadow: 2px 2px black;
     letter-spacing: 3px;
 }
 .botao {
-    font-family: cursive;
     background-color: #4775d188;
     color: black;
+    font-size: 16px;
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
 }
 .input {
-    font-family: cursive;
     border: solid #4775d1;
     border-width: 2px;
+    height: 35px;
+    border-radius: 10px;
 }
