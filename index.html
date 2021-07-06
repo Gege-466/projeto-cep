@@ -6,14 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Cep</title>
     <link rel="stylesheet"  href="./index.css">
+    
 </head>
 <body>
     <div class="intro">
         <h1 class="titulo">Search Cep</h1>
     </div>
     <div class="intro">
-        <input type="text" placeholder="Digite seu cep aqui" class="input">
-        <button class="botao">Buscar</button>
+    <form>   
+        <input type="text" placeholder="Digite seu cep aqui" maxlength="9" class="input">
+        <button type="button"class="botao">Buscar</button>
+        <button type="reset" class="botao">Limpar</button>
+    </form>
+    </div>
+    <div>
+        <table>   
+            <tr>
+                <th>Endereço</th>
+                <th>Bairro</th>
+                <th>Cidade</th>
+                <th>UF</th>
+                <th>CEP</th>
+            </tr>
+            <tr>
+                <td>Rua Pantanais do Mato Grosso - de 600/601 ao fim</td>
+                <td>Jardim das Camélias</td>
+                <td>São Paulo</td>
+                <td>SP</td>
+                <td>08050-490</td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
