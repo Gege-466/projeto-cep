@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Cep</title>
     <link rel="stylesheet"  href="./index.css">
+    <script src="./index.js"></script>
     
 </head>
 <body>
@@ -13,11 +14,12 @@
         <h1 class="titulo">Search Cep</h1>
     </div>
     <div class="intro">
-    <form>   
-        <input type="text" placeholder="Digite seu cep aqui" maxlength="9" class="input">
+       
+        <input id="cep" type="text" placeholder="Digite seu cep aqui" maxlength="9" class="input">
         <button type="button"class="botao">Buscar</button>
-        <button type="reset" class="botao">Limpar</button>
-    </form>
+        <button class="botao">Limpar</button>
+        <button class="botao" onclick="validarCep()">Validar</button>
+    
     </div>
     <div>
         <table>   
