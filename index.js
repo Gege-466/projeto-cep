@@ -1,4 +1,5 @@
 
+
 function validarCep() {
     var cep = document.getElementById("cep").value
     if (cep == "") {
@@ -9,5 +10,6 @@ function validarCep() {
     }
 }
 function clean() {
-    document.getElementById("limpar").innerHTML = "";
+    document.querySelectorAll("td").forEach(x => x.innerHTML = "");
+    document.getElementById("cep").value = "";
 }
