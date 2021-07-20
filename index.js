@@ -8,3 +8,6 @@ function validarCep() {
         alert("somente numeros")
     }
 }
+function clean() {
+    document.getElementById("limpar").innerHTML = "";
+}

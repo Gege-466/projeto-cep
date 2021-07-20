@@ -17,7 +17,7 @@
        
         <input id="cep" type="text" placeholder="Digite seu cep aqui" maxlength="9" class="input">
         <button type="button"class="botao">Buscar</button>
-        <button class="botao">Limpar</button>
+        <button class="botao" onclick="clean()">Limpar</button>
         <button class="botao" onclick="validarCep()">Validar</button>
     
     </div>
@@ -30,7 +30,7 @@
                 <th>UF</th>
                 <th>CEP</th>
             </tr>
-            <tr>
+            <tr id="limpar">
                 <td>Rua Pantanais do Mato Grosso - de 600/601 ao fim</td>
                 <td>Jardim das Camélias</td>
                 <td>São Paulo</td>
