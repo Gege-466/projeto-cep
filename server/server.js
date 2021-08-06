@@ -1,11 +1,14 @@
+require('dotenv').config();
 const express = require('express');
+const cors = require('cors');
 const fetch = require('node-fetch');
+const PORT = process.env.PORT;
 
 const api = express();
 
-function getCepFromViaCep(cep) {
-    return fetch(`https://viacep.com.br/ws/${cep}/json/`);
-}
+api.use(cors());
+
+const getCepFromViaCep = (cep) => fetch(`https://viacep.com.br/ws/${cep}/json/`);
 
 api.get('/:cep', (req, res) => {
     const cep = req.params.cep;
@@ -18,6 +21,6 @@ api.get('/:cep', (req, res) => {
 
 });
 
-api.listen(3333, () => {
-    console.log('server is ON');
+api.listen(PORT, () => {
+    console.log(`server is ON, port: ${PORT}`);
 })
