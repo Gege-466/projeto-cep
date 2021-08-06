@@ -24,8 +24,12 @@ const findCep = () => {
     getCepFromViaCep(cep)
     .then(x => x.json())
     .then(x => {
-        console.log(x);
-        table.innerHTML = `<td>${x.logradouro}</td>`
+        table.innerHTML = '';
+        table.innerHTML += `<td>${x.logradouro}</td>`;
+        table.innerHTML += `<td>${x.bairro}</td>`;
+        table.innerHTML += `<td>${x.localidade}</td>`;
+        table.innerHTML += `<td>${x.uf}</td>`;
+        table.innerHTML += `<td>${x.cep}</td>`;
     });
 }
 
