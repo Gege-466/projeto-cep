@@ -24,14 +24,17 @@
     border-width: 2px;
     padding: 7px;
 }
-td {
-    padding: 15px;
-}
 th {
+    text-align: center;
+    width: 200px;
     background-color:#4775d188;
 }
+
 table {
-    border-collapse: collapse;
     margin-top: 30px;
-    margin-left: 26%;
+    margin-left: 22%;
+}
+
+td {
+    text-align: center;
 }
