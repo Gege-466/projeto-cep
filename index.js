@@ -1,11 +1,12 @@
 
 function validarCep() {
+ 
     var cep = getCepFromInput()
     if (cep == "") {
-        alert("o cep nao pode ser vazio")
+        document.getElementById("erroAlert").innerHTML = ("o cep nao pode ser vazio")
     }
     if(cep.match(/[a-zA-Z]/) != null) {
-        alert("somente numeros")
+        document.getElementById("erroAlert").innerHTML = ("somente numeros")
     }
 }
 
@@ -42,3 +43,4 @@ function getCepFromInput() {
 function getCepFromViaCep(cep) {
     return fetch(`http://localhost:3333/${cep}`);
 }
+$('#meuModal').modal('show')
