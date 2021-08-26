@@ -15,7 +15,7 @@ function clean() {
     document.getElementById("cep").value = "";
 }
 
-const findCep = () => {
+function findCep() {
     const cep = getCepFromInput();
 
     const table = document.querySelector('[id=tbodyCep] > tr');
@@ -44,3 +44,7 @@ function getCepFromViaCep(cep) {
     return fetch(`http://localhost:3333/${cep}`);
 }
 $('#meuModal').modal('show')
+
+function validarCepfindCep() {
+    return validarCep() + findCep()
+}
